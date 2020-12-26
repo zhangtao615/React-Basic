@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import Card from './compoments/Card'
+import LikeButton from './compoments/LikeButton';
+import Clock from './compoments/Clock'
+import Form from './compoments/Form'
 import './App.css';
 
 function App() {
+  const tags = ['前端开发', 'Bug开发工程师']
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card name="7years" number={12346365} isHuman tags={tags}></Card>
+      <LikeButton />
+      <Clock />
+      <Form />
     </div>
   );
 }
